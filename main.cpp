@@ -136,7 +136,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		/*Novice::DrawLine(static_cast<int>(start.x), static_cast<int>(start.y),
 			static_cast<int>(end.x), static_cast<int>(end.y), WHITE);*/
 		DrawGrid(viewProjectionMatrix, viewportMatrix);
-		if (IsCollision(pointSphere,plane)) {
+		if (IsCollision(segment,plane)) {
 			DrawSphere(pointSphere, viewProjectionMatrix, viewportMatrix, RED);
 			DrawPlane(plane, viewProjectionMatrix, viewportMatrix, RED);
 			DrawRay(line, 2.0f, viewProjectionMatrix, viewportMatrix, RED);
